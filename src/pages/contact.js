@@ -1,13 +1,14 @@
 import React from "react"
 import Header from "../components/Header"
 
-const BlogPage = () => {
+const Contact = () => {
   return (
     <div>
       <Header />
-      <h1>Blog</h1>
+      <h1>Contact</h1>
+      <p>Contact Me</p>
     </div>
   )
 }
 
-export default BlogPage
+export default Contact
