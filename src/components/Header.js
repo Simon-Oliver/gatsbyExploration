@@ -3,24 +3,35 @@ import { Link } from "gatsby"
 
 const Header = () => {
   return (
-    <div>
-      <Link to="/" activeStyle={{ color: "red" }}>
-        Home
-      </Link>
-      <br />
-      <Link to="/about" activeStyle={{ color: "red" }}>
-        About Me
-      </Link>
-      <br />
-      <Link to="/contact" activeStyle={{ color: "red" }}>
-        Contact Me
-      </Link>
-      <br />
-      <Link to="/blog" activeStyle={{ color: "red" }}>
-        Blog
-      </Link>
-      <br />
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/" activeStyle={{ color: "red" }}>
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/about" activeStyle={{ color: "red" }}>
+              About Me
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/contact" activeStyle={{ color: "red" }}>
+              Contact Me
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/blog" activeStyle={{ color: "red" }}>
+              Blog
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 

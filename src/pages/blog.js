@@ -1,12 +1,11 @@
 import React from "react"
-import Header from "../components/Header"
+import Layout from "../components/Layout"
 
 const BlogPage = () => {
   return (
-    <div>
-      <Header />
+    <Layout>
       <h1>Blog</h1>
-    </div>
+    </Layout>
   )
 }
 
