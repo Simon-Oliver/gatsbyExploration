@@ -1,31 +1,49 @@
 import React from "react"
 import { Link } from "gatsby"
+// import "../styles/header.module.scss"
+import headerStyles from "../styles/header.module.scss"
 
 const Header = () => {
   return (
     <header>
       <nav>
-        <ul>
+        <ul className={headerStyles.container}>
           <li>
-            <Link to="/" activeStyle={{ color: "red" }}>
+            <Link
+              className={headerStyles.link}
+              to="/"
+              activeStyle={{ color: "red" }}
+            >
               Home
             </Link>
           </li>
 
           <li>
-            <Link to="/about" activeStyle={{ color: "red" }}>
+            <Link
+              className={headerStyles.link}
+              to="/about"
+              activeStyle={{ color: "red" }}
+            >
               About Me
             </Link>
           </li>
 
           <li>
-            <Link to="/contact" activeStyle={{ color: "red" }}>
+            <Link
+              className={headerStyles.link}
+              to="/contact"
+              activeStyle={{ color: "red" }}
+            >
               Contact Me
             </Link>
           </li>
 
           <li>
-            <Link to="/blog" activeStyle={{ color: "red" }}>
+            <Link
+              className={headerStyles.link}
+              to="/blog"
+              activeStyle={{ color: "red" }}
+            >
               Blog
             </Link>
           </li>

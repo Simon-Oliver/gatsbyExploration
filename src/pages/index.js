@@ -6,6 +6,9 @@ const IndexPage = () => {
     <Layout>
       <h1>Hello.</h1>
       <h2>I'm Simon!</h2>
+      <a href="https://www.google.com" target="blank">
+        Go to Google
+      </a>
     </Layout>
   )
 }
