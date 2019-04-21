@@ -5,14 +5,14 @@ import headerStyles from "../styles/header.module.scss"
 
 const Header = () => {
   return (
-    <header>
+    <header className={headerStyles.header}>
       <nav>
-        <ul className={headerStyles.container}>
+        <ul className={headerStyles.navList}>
           <li>
             <Link
-              className={headerStyles.link}
+              className={headerStyles.navItem}
               to="/"
-              activeStyle={{ color: "red" }}
+              activeClassName={headerStyles.activeNavItem}
             >
               Home
             </Link>
@@ -20,9 +20,9 @@ const Header = () => {
 
           <li>
             <Link
-              className={headerStyles.link}
+              className={headerStyles.navItem}
               to="/about"
-              activeStyle={{ color: "red" }}
+              activeClassName={headerStyles.activeNavItem}
             >
               About Me
             </Link>
@@ -30,9 +30,9 @@ const Header = () => {
 
           <li>
             <Link
-              className={headerStyles.link}
+              className={headerStyles.navItem}
               to="/contact"
-              activeStyle={{ color: "red" }}
+              activeClassName={headerStyles.activeNavItem}
             >
               Contact Me
             </Link>
@@ -40,9 +40,9 @@ const Header = () => {
 
           <li>
             <Link
-              className={headerStyles.link}
+              className={headerStyles.navItem}
               to="/blog"
-              activeStyle={{ color: "red" }}
+              activeClassName={headerStyles.activeNavItem}
             >
               Blog
             </Link>
