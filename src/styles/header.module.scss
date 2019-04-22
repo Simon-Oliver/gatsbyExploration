@@ -34,7 +34,7 @@
 
 .nav-item::after {
     transition: width 0.3s ease 0s, left 0.3s ease;
-    height: 3px;
+    height: 1.5px;
     position: absolute;
     content: "";
     background-color: #333333;
@@ -54,7 +54,7 @@
 
 
 .active-nav-item::after {
-    height: 3px;
+    height: 1.5px;
     position: absolute;
     content: "";
     background-color: #333333;

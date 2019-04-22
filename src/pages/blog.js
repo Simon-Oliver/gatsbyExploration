@@ -12,7 +12,6 @@ const BlogPage = () => {
               title
               date
             }
-            html
             excerpt
           }
         }
@@ -21,14 +20,13 @@ const BlogPage = () => {
   `)
 
   const renderList = data.allMarkdownRemark.edges.map(post => (
-    <div>
-      <h3>
+    <div key={post.node.frontmatter.title}>
+      <h4>
         {post.node.frontmatter.date} {post.node.frontmatter.title}
-      </h3>
+      </h4>
       <p key={post.node.frontmatter.title}>{post.node.excerpt}</p>
     </div>
   ))
-  console.log(data)
   return (
     <Layout>
       <h1>Blog</h1>
