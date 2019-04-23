@@ -1,5 +1,5 @@
 ---
-title: 'Sit enim non et aliqua consequat nulla ex.'
+title: 'Sit enim'
 date: '19/03/2019'
 ---
 

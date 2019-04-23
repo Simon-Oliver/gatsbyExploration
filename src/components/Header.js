@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import headerStyles from "../styles/header.module.scss"
+import headerStyles from "./header.module.scss"
 
 const Header = () => {
   return (
@@ -43,6 +43,7 @@ const Header = () => {
               className={headerStyles.navItem}
               to="/blog"
               activeClassName={headerStyles.activeNavItem}
+              partiallyActive
             >
               Blog
             </Link>

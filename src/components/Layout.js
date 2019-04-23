@@ -1,8 +1,8 @@
 import React from "react"
-import Header from "./header"
+import Header from "./Header"
 import Footer from "./Footer"
 import "../styles/index.scss"
-import layoutStyles from "../styles/layout.module.scss"
+import layoutStyles from "./layout.module.scss"
 
 const Layout = props => {
   const { children } = props
