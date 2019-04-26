@@ -7,6 +7,7 @@ export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
+      contentful_id
       publishedDate(formatString: "MMMM Do, YYYY")
       body {
         json

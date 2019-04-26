@@ -9,6 +9,7 @@ module.exports = {
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true,
       },
     },
     `gatsby-plugin-sass`,
@@ -20,6 +21,13 @@ module.exports = {
           "gatsby-remark-relative-images",
           {
             resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1500,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images-contentful`,
             options: {
               maxWidth: 1500,
               linkImagesToOriginal: false,
